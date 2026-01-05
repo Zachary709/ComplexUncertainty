@@ -1,0 +1,20 @@
+# API配置
+api:
+  url: "http://localhost:8000"
+
+# 题目文件配置
+questions:
+  questions_file: "questions/aime2024_questions.txt"
+  answers_file: "questions/aime2024_answers.txt"
+
+# 默认参数
+defaults:
+  qid: "2024-I-1"
+  max_tokens: 32768
+
+# 生成参数
+generation:
+  system_prompt: "你是一个数学专家，请仔细思考并解答以下数学问题。"
+  enable_thinking: false
+  temperature: 0.6
+  top_p: 1.0
